@@ -57,12 +57,12 @@ build_keras_model <- function(p,
 											activation = af_string_list[[l]])
 			} else if (my_max_norm[[1]] == "l2_norm"){
 				nn %>%
-					layer_combined_L2(units = h_neurons_vector[1]) %>%
-					keras::layer_activation(activation = af_string_list[[1]])
+					layer_combined_L2(units = h_neurons_vector[l]) %>%
+					keras::layer_activation(activation = af_string_list[[l]])
 			} else if (my_max_norm[[1]] == "l1_norm"){
 				nn %>%
-					layer_combined_L1(units = h_neurons_vector[1]) %>%
-					keras::layer_activation(activation = af_string_list[[1]])
+					layer_combined_L1(units = h_neurons_vector[l]) %>%
+					keras::layer_activation(activation = af_string_list[[l]])
 			}
 		}
 	}
