@@ -15,8 +15,8 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(nn2pr.tools)
-library(nn2pr)
+library(nn2poly.tools)
+library(nn2poly)
 library(keras)
 library(tensorflow)
 ```

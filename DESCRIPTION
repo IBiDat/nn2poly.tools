@@ -1,4 +1,4 @@
-Package: nn2pr.tools
+Package: nn2poly.tools
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
@@ -14,7 +14,7 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
 Imports: 
-    nn2pr,
+    nn2poly,
     keras,
     tensorflow,
     magrittr,
