@@ -3,6 +3,7 @@
 export(build_keras_model)
 export(divide_train_test)
 export(generate_normal_data)
+export(generate_uniform_data)
 export(get_optimizer_name_as_string)
 export(layer_combined_L1)
 export(layer_combined_L2)
