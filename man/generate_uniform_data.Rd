@@ -13,11 +13,9 @@ generate_uniform_data(n_sample, p, q_original, unif_range, error_var)
 
 \item{q_original}{degree of the original polynomial}
 
+\item{unif_range}{range for the uniform}
+
 \item{error_var}{variance of the added normal error}
-
-\item{mean_range}{range for the normal mean}
-
-\item{beta_range}{range for the ebta coefficients}
 }
 \value{
 list with data and orginal coefficients

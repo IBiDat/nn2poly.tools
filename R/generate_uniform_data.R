@@ -5,8 +5,7 @@
 #' @param n_sample  number of samples
 #' @param p dimensions
 #' @param q_original degree of the original polynomial
-#' @param mean_range range for the normal mean
-#' @param beta_range range for the ebta coefficients
+#' @param unif_range range for the uniform
 #' @param error_var variance of the added normal error
 #'
 #' @return list with data and orginal coefficients
