@@ -28,7 +28,7 @@ generate_uniform_data <- function(n_sample, p, q_original, unif_range, error_var
   # Obtain the values for thebetas unformly distributed in the given range
   original_betas <- rep(0,n_betas)
   while(sum(abs(original_betas)) == 0){
-  	original_betas <- sample(x=c(-2,-1,0,1,2), size=10, replace=TRUE)
+  	original_betas <- sample(x=c(-2,-1,0,1,2), size=n_betas, replace=TRUE)
   }
 
 
