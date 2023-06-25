@@ -25,30 +25,12 @@ build_keras_model <- function(p,
 	L <- length(h_neurons_vector)
 
 	# Create the nn model:
-	nn <- keras::keras_model_sequential()
+	nn <- keras::keras_model_sequential(input_shape = p)
 
-	# First layer:
-
-	# Check the needed constraint
-	if (my_max_norm[[1]] == "no_constraint") {
-		nn %>%
-			keras::layer_dense(units = h_neurons_vector[1],
-									activation = af_string_list[[1]],
-									input_shape = p)
-	}  else if (my_max_norm[[1]] == "l2_norm"){
-		nn %>%
-			layer_combined_L2(units = h_neurons_vector[1]) %>%
-			keras::layer_activation(activation = af_string_list[[1]])
-	}  else if (my_max_norm[[1]] == "l1_norm"){
-		nn %>%
-			layer_combined_L1(units = h_neurons_vector[1]) %>%
-			keras::layer_activation(activation = af_string_list[[1]])
-	}
-
-
+	# This is expected to be always L>2?
 	if(L>2){
 		# rest of the layers except the last one:
-		for (l in 2:(L-1)){
+		for (l in 1:(L-1)){
 
 			# Check the needed constraint
 			if (my_max_norm[[1]] == "no_constraint") {
